@@ -5,7 +5,7 @@ If you're somebody trying to get their friends of friends to play with it in Gep
 ### Usage
 The current version is written using Selenium's Firefox web driver, which means you need Firefox installed. 
 
-Download the Geckodriver for Firefox here: https://github.com/mozilla/geckodriver/releases
+Download the Geckodriver for Firefox here: https://github.com/mozilla/geckodriver/releases Download and install the exe file (for Windows) into the C:\Windows\System32 folder.
 
 Soon, versions will be rewritten for use with Chrome, Safari, and maybe IE.
 
