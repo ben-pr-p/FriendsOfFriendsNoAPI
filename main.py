@@ -12,7 +12,7 @@ scraper = FB_Scraper(cookies)
 all_friends = {}
 
 import queue as queue
-q = queue()
+q = queue.Queue()
 q.put(scraper.username)
 crawl = True
 
