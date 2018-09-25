@@ -11,8 +11,8 @@ scraper = FB_Scraper(cookies)
 
 all_friends = {}
 
-from Queue import Queue
-q = Queue()
+import queue as queue
+q = queue.Queue()
 q.put(scraper.username)
 crawl = True
 
@@ -22,9 +22,9 @@ while not q.empty():
     current = q.get()
 
     # navigate to their friends
-    print 'Fetching ' + current + "'s friends..."
+    print('Fetching ' + current + "'s friends...")
     friends = scraper.get_friends_of(current)
-    print friends
+    print(friends)
 
     # prevents going a level deeper (friends of friends of friends)
     if crawl:                    # if first time crawling it's the starting user
